@@ -1,0 +1,28 @@
+html {
+    overflow: hidden;
+  }
+  
+  .img-fluid {
+    margin-left: -30px;
+    width: 70vw;
+    height: 100vh;
+  }
+  
+  div.box {
+    height: 34px;
+    width: 100px;
+    background-color: #CFD4ED;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    width: 100%;
+    background-color: #0D28A6;
+  }
+  
+  .contents {
+    margin: auto;
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  /*# sourceMappingURL=login.css.map */
