@@ -1,0 +1,35 @@
+<body>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <img src="/img/backgroundlogin.png" alt="Image" class="img-fluid">
+                </div>
+                <div class="col-md-3 contents text-start">
+                    <div href="" class="box mb-4"></div>
+                    <h3 class="mb-5">Welcome, Admin BCR</h3>
+                    <!-- form -->
+                    <form action="/auth/register" method="post">
+                        <div class="form-group first">
+                            <label for="username" class="mb-3">Username</label>
+                            <input type="text" class="form-control mb-3" id="username" name="username">
+                        </div>
+                        <div class="form-row my-2">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" id="password" name="password"
+                                placeholder="6+ karakter">
+                        </div>
+                        <div class="form-row my-2">
+                            <label for="password">Konfiramsi Password</label>
+                            <input type="password" class="form-control" name="password2" id="password" name="password"
+                                placeholder="6+ karakter">
+                        </div>
+
+                        <input type="submit" value="Register" class="btn btn-block btn-primary">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>

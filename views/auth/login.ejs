@@ -1,0 +1,32 @@
+<body>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <img src="/img/backgroundlogin.png" alt="Image" class="img-fluid">
+                </div>
+                <div class="col-md-3 contents text-start">
+                    <div href="" class="box mb-4"></div>
+                    <h3 class="mb-5">Welcome, Admin BCR</h3>
+                    <% if (messages.error) { %>
+                        <p style="color: red; font-style: italic"><%= messages.error %></p>
+                      <% } %>
+                    <!-- form -->
+                    <form action="/auth/login" method="post">
+                        <div class="form-group first">
+                            <label for="username" class="mb-3">Username</label>
+                            <input type="text" class="form-control mb-3" id="username" name="username">
+                        </div>
+                        <div class="form-group last mb-4">
+                            <label for="password" class="mb-3">Password</label>
+                            <input type="password" class="form-control mb-3" id="password" name="password">
+                        </div>
+
+                        <input type="submit" value="Log In" class="btn btn-block btn-primary">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
