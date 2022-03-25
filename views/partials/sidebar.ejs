@@ -1,20 +1,17 @@
-<%- include("../partials/head")  %>
-<%- include("../partials/navbar")  %>
-
 <div class="sidebar">
     <div class="row h-100">
         <div class="main text-center h-100">
             <img src="/img/kotak.png" class="logo" alt="bcr-logo">
             <ul class="w-100">
                 <a href="/dashboard">
-                    <li>
-                        <img src="/img/fi_home.png" style="transform: scale(80%);"alt="">
+                    <li class="active">
+                        <img src="/img/fi_home.png" style="transform: scale(80%); margin-top:-10px;" alt="">
                         <p class="my-2 text-center">Dashboard</p>
                     </li>
                 </a>
                 <a href="/car">
-                    <li class="active" class="mt-2">
-                        <img src="/img/fi_truck.png" style="transform: scale(80%); margin-top:-10px;"alt="">
+                    <li>
+                        <img src="/img/fi_truck.png" style="transform: scale(80%);" alt="">
                         <p class="my-2">Cars</p>
                     </li>
                 </a>
@@ -33,18 +30,3 @@
         </div>
     </div>
 </div>
-
-<%- body %>
-
-<script>
-    const sidebarButton = document.querySelector("#sidebar-btn")
-    const sidebar = document.querySelector(".sidebar")
-    const content = document.querySelector("#content")
-    const navbar = document.querySelector(".navbar")
-
-    sidebarButton.onclick = () => {
-        sidebar.classList.toggle("active");
-        content.classList.toggle("active");
-        navbar.classList.toggle("active");
-    }
-</script>

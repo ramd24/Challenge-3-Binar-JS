@@ -1,1 +1,17 @@
-<h1>ini dashboard</h1>
+<%- include("../partials/head")  %>
+<%- include("../partials/navbar")  %>
+<%- include("../partials/sidebar")  %>
+<%- body %>
+
+<script>
+    const sidebarButton = document.querySelector("#sidebar-btn")
+    const sidebar = document.querySelector(".sidebar")
+    const content = document.querySelector("#content")
+    const navbar = document.querySelector(".navbar")
+
+    sidebarButton.onclick = () => {
+        sidebar.classList.toggle("active");
+        content.classList.toggle("active");
+        navbar.classList.toggle("active");
+    }
+</script>

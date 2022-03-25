@@ -1,0 +1,25 @@
+<body>
+    <div class="row">
+        <div id="content" class="min-vh-100">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active font-weight-bold" aria-current="page">Car</li>
+                <li class="breadcrumb-item active" aria-current="page">List Car</li>
+            </ol>
+            <div class="row justify-content-between m-0">
+                <h5>List Car</h5>
+                <a href="/car/add-car" type="button" id="add-button" class="btn btn-lg btn-sm">
+                    <i class="fa-solid fa-plus"></i>
+                    &nbsp;&nbsp;Add New Car
+                </a>
+            </div>
+            <button type="button" class="btn btn-lg category-btn btn-sm clicked">All</button>
+            <button type="button" class="btn btn-lg category-btn btn-sm">Small</button>
+            <button type="button" class="btn btn-lg category-btn btn-sm">Medium</button>
+            <button type="button" class="btn btn-lg category-btn btn-sm">Large</button>
+            <div class="row mt-3">
+                <%- include("../partials/card") %>
+            </div>
+        </div>
+    </div>
+
+</body>

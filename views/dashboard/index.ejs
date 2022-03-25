@@ -1,1 +1,152 @@
-<h1>ini dashboard</h1>
+<body>
+	<div class="row">
+		<div id="content" class="min-vh-100">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item active font-weight-bold" aria-current="page">Dashboard</li>
+				<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+			</ol>
+			<div class="main-1">
+				<h5 class="title font-weight-bold">Dashboard</h5>
+				<h6 class="subtitle font-weight-bold">List Order</h6>
+				<table class="table table-bordered">
+					<thead class="thead-light">
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">User Email</th>
+							<th scope="col">Car</th>
+							<th scope="col">Start Rent</th>
+							<th scope="col">Finish Rent</th>
+							<th scope="col">Price</th>
+							<th scope="col">Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% for( let i = 0; i < orders.length; i++ ) { %>
+							<%- include("../partials/tableOrder", {order: orders[i], number: i+1})  %> 						
+						<% } %>
+					</tbody>
+				</table>
+				<div class="row">
+					<div class="col-1">
+						<div class="dropdown">
+							<button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton"
+								data-toggle="dropdown" aria-expanded="false">
+								10
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">10</a>
+								<a class="dropdown-item" href="#">20</a>
+								<a class="dropdown-item" href="#">30</a>
+								<a class="dropdown-item" href="#">40</a>
+								<a class="dropdown-item" href="#">50</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-2 row">
+						<div class="dropdown">
+							<button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton"
+								data-toggle="dropdown" aria-expanded="false">
+								10
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">10</a>
+								<a class="dropdown-item" href="#">20</a>
+								<a class="dropdown-item" href="#">30</a>
+								<a class="dropdown-item" href="#">40</a>
+								<a class="dropdown-item" href="#">50</a>
+							</div>
+							<button class="btn go-btn">Go</button>
+						</div>
+					</div>
+					<div class="col-6"></div>
+					<div class="col-3">
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-end">
+								<li class="page-item disabled">
+									<a class="page-link"><i class="fa-solid fa-angles-left"></i></a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#"><i class="fa-solid fa-angles-right"></i></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="main-2">
+				<h6 class="subtitle font-weight-bold">List Car</h6>
+				<table class="table table-bordered">
+					<thead class="thead-light">
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">Name</th>
+							<th scope="col">Category</th>
+							<th scope="col">Price</th>
+							<th scope="col">Start Rent</th>
+							<th scope="col">Finish Rent</th>
+							<th scope="col">Created at</th>
+							<th scope="col">Updated at</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% for( let i = 0; i < cars.length; i++ ) { %>
+							<%- include("../partials/tableCar", {car: cars[i], number: i+1})  %> 						
+						<% } %>
+					</tbody>
+				</table>
+				<div class="row">
+					<div class="col-1">
+						<div class="dropdown">
+							<button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton"
+								data-toggle="dropdown" aria-expanded="false">
+								10
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">10</a>
+								<a class="dropdown-item" href="#">20</a>
+								<a class="dropdown-item" href="#">30</a>
+								<a class="dropdown-item" href="#">40</a>
+								<a class="dropdown-item" href="#">50</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-2 row">
+						<div class="dropdown">
+							<button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton"
+								data-toggle="dropdown" aria-expanded="false">
+								10
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">10</a>
+								<a class="dropdown-item" href="#">20</a>
+								<a class="dropdown-item" href="#">30</a>
+								<a class="dropdown-item" href="#">40</a>
+								<a class="dropdown-item" href="#">50</a>
+							</div>
+							<button class="btn go-btn">Go</button>
+						</div>
+					</div>
+					<div class="col-6"></div>
+					<div class="col-3">
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-end">
+								<li class="page-item disabled">
+									<a class="page-link"><i class="fa-solid fa-angles-left"></i></a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#"><i class="fa-solid fa-angles-right"></i></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

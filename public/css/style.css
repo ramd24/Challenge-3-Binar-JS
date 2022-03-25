@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    font: 14px Helvetica, Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  a {
+    color: #00b7ff;
+  }
+  
+  a:hover{
+    text-decoration: none;
+  }
+  
+  .img-left {
+    background: url("../images/image_2.png") center;
+    background-size: cover;
+  }
+  
+  .login-btn {
+    width: 100%;
+    height: 36px;
+    border: none none none;
+    background-color: #0d28a6;
+    color: white;
+  }
+  
+  .navbar {
+    background-color: #fff !important;
+    width: 100%;
+    padding-left: 35px;
+    left: 0;
+  }
+  .navbar.active {
+    width: calc(100% - 290px);
+    left: 290px;
+  }
+  
+  nav #sidebar-btn {
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  nav .search-btn {
+    border: 1px solid #0d28a6;
+  }
+  
+  nav .search-btn:hover {
+    border: 1px solid #0d28a6;
+    background-color: #cfd4ed;
+  }
+  
+  .sidebar {
+    display: none;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .sidebar.active {
+    display: block;
+    width: 290px;
+  }
+  
+  .sidebar .main {
+    width: 100px;
+  }
+  
+  .sidebar .logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+  }
+  
+  .sidebar ul {
+    margin-top: 20px;
+  }
+  
+  .sidebar ul li {
+    position: relative;
+    list-style: none;
+    padding-top: 20px;
+    height: 60px;
+  }
+  
+  .sidebar ul li{
+    color: white;
+  }
+  
+  .sidebar ul li.active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .sidebar .main {
+    background-color: #0d28a6;
+    margin-left: 15px;
+  }
+  
+  .sidebar .sub-main {
+    margin-top: 20px;
+    width: 200px;
+  }
+  
+  .sidebar .sub-main h4 {
+    padding-left: 24px;
+    font-weight: bolder;
+  }
+  
+  .sidebar .sub-main-title {
+    margin-top: 40px;
+    padding-left: 24px;
+    width: 100%;
+    font-weight: bolder;
+    color: #8A8A8A;
+  }
+  
+  .sidebar .sub-main li {
+    padding: 11px 0;
+    background-color: #CFD4ED;
+    height: auto;
+    padding-left: 24px;
+  }
+  
+  .sidebar .sub-main li h6 {
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 0;
+  }
+  
+  #content {
+    position: absolute;
+    background-color: #f4f5f7;
+    padding: 0 25px;
+    width: 100%;
+    left: 0;
+    top: 55px;
+  }
+  
+  #content.active {
+    left: 290px;
+    width: calc(100% - 290px);
+  }
+  
+  #content .subtitle {
+    margin: 20px 0 15px 0;
+  }
+  
+  #content thead th {
+    background-color: #cfd4ed;
+    font-weight: bold;
+    color: black;
+  }
+  
+  #content .subtitle {
+    position: relative;
+    margin-left: 12px;
+  }
+  
+  #content .subtitle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #0d28a6;
+    width: 4px;
+    margin-left: -8px;
+  }
+  
+  #content .go-btn {
+    background-color: #0d28a6;
+    color: white;
+    height: 36px;
+  
+  }
+  
+  #add-button {
+    background-color: #0d28a6;
+    color: white;
+    height: 36px;
+    padding-top: 6px;
+  }
+  
+  .car-success {
+    background-color: #73CA5C;
+    color: white;
+    height: 48px;
+    width: 550px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .category-btn {
+    border: 1px solid #aeb7e1;
+    border-radius: 2px;
+    color: #aeb7e1;
+    padding: 8px 12px;
+    font-weight: bold;
+    margin-right: 16px;
+  }
+  
+  .category-btn:hover {
+    color: #0d28a6;
+  }
+  
+  .category-btn.clicked {
+    border: 1px solid #0d28a6;
+    background-color: #aeb7e1;
+    color: #0d28a6;
+  }
+  
+  .picture-form {
+    position: relative;
+  }
+  
+  .picture-form:after {
+    font-family: "FontAwesome";
+    font-size: medium;
+    content: "\e09a";
+    position: relative;
+    right: 40px;
+    top: 10px;
+  }
+  
+  #cancel-btn {
+    border-radius: 2px;
+    border: 1px solid #0d28a6;
+    color: #0d28a6;
+  }
+  
+  #save-btn {
+    border-radius: 2px;
+    background-color: #0d28a6;
+    border: 1px solid #0d28a6;
+    color: white;
+  }
+  
+  .breadcrumb {
+    background-color: unset;
+  }
+  
+  .breadcrumb-item+.breadcrumb-item::before{
+    font-family: "FontAwesome";
+    font-size: medium;
+      content: "\f105";
+  }

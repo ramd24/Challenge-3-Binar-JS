@@ -13,6 +13,6 @@ router.use((req, res, next) => {
 
 router.get('/', carController.index)
 router.get('/add-car', carController.addCar)
-router.post('/add-car', carController.post.addCar)
+
 
 module.exports = router
